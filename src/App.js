@@ -2,14 +2,20 @@ import { useEffect, useState } from "react";
 
 import "./App.css";
 import SingleCard from "./components/SingleCard";
+import Bomb from "./images/bomb.png";
+import Diamond from "./images/diamond.png";
+import Money from "./images/money.png";
+import Scalp from "./images/scalp.png";
+import Sword from "./images/sword.png";
+import Trophy from "./images/trophy.png";
 
 const cardImages = [
-  { src: "/images/bomb.png", matched: false },
-  { src: "/images/trophy.png", matched: false },
-  { src: "/images/diamond.png", matched: false },
-  { src: "/images/money.png", matched: false },
-  { src: "/images/scalp.png", matched: false },
-  { src: "/images/sword.png", matched: false },
+  { src: Bomb, matched: false },
+  { src: Trophy, matched: false },
+  { src: Diamond, matched: false },
+  { src: Money, matched: false },
+  { src: Scalp, matched: false },
+  { src: Sword, matched: false },
 ];
 
 function App() {

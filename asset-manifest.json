@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/magic-match-game/static/css/main.01020a3f.css",
+    "main.js": "/magic-match-game/static/js/main.a3c8265d.js",
+    "index.html": "/magic-match-game/index.html",
+    "main.01020a3f.css.map": "/magic-match-game/static/css/main.01020a3f.css.map",
+    "main.a3c8265d.js.map": "/magic-match-game/static/js/main.a3c8265d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01020a3f.css",
+    "static/js/main.a3c8265d.js"
+  ]
+}

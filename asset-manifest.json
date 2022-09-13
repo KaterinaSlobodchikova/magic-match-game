@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/magic-match-game/static/css/main.01020a3f.css",
-    "main.js": "/magic-match-game/static/js/main.b8d70b08.js",
+    "main.js": "/magic-match-game/static/js/main.eb96cd8b.js",
     "static/media/cover.png": "/magic-match-game/static/media/cover.c7e840aca52591842b5a.png",
     "static/media/money.png": "/magic-match-game/static/media/money.6cc1958d2fe3a375ad61.png",
     "static/media/scalp.png": "/magic-match-game/static/media/scalp.f12a228f94067c955bb6.png",
@@ -11,10 +11,10 @@
     "static/media/sword.png": "/magic-match-game/static/media/sword.7652ef46734168febcc5.png",
     "index.html": "/magic-match-game/index.html",
     "main.01020a3f.css.map": "/magic-match-game/static/css/main.01020a3f.css.map",
-    "main.b8d70b08.js.map": "/magic-match-game/static/js/main.b8d70b08.js.map"
+    "main.eb96cd8b.js.map": "/magic-match-game/static/js/main.eb96cd8b.js.map"
   },
   "entrypoints": [
     "static/css/main.01020a3f.css",
-    "static/js/main.b8d70b08.js"
+    "static/js/main.eb96cd8b.js"
   ]
 }

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Confetti from "react-confetti";
 
 import "./App.css";
 import SingleCard from "./components/SingleCard";
@@ -24,6 +25,7 @@ function App() {
   const [firstChoice, setFirstChoice] = useState(null);
   const [secondChoice, setSecondChoice] = useState(null);
   const [disabled, setDisabled] = useState(false);
+  const [winner, setWinner] = useState(false);
 
   const shuffleCards = () => {
     const shuffledCards = [...cardImages, ...cardImages]
@@ -34,6 +36,7 @@ function App() {
     setSecondChoice(null);
     setCards(shuffledCards);
     setTurns(0);
+    setWinner(false);
   };
 
   const handleChoice = (card) => {
@@ -73,6 +76,18 @@ function App() {
     shuffleCards();
   }, []);
 
+  const matchedCards = cards.filter((card) => card.matched === true);
+
+  const checkCompletion = () => {
+    if (matchedCards.length > 0 && matchedCards.length === cards.length) {
+      setWinner(true);
+    }
+  };
+
+  useEffect(() => {
+    checkCompletion();
+  }, [matchedCards]);
+
   return (
     <div className="App">
       <h1>Magic Match</h1>
@@ -91,6 +106,7 @@ function App() {
         ))}
       </div>
       <p>Turns: {turns}</p>
+      {winner && <Confetti width={1920} height={1080} />}
     </div>
   );
 }
